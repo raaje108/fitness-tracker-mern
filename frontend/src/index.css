@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Transition effect for color shifting */
+/* Heatmap Colors - Light Mode */
+.react-calendar-heatmap .color-empty { fill: #f3f4f6; }
+.react-calendar-heatmap .color-scale-1 { fill: #dbeafe; }
+.react-calendar-heatmap .color-scale-2 { fill: #93c5fd; }
+.react-calendar-heatmap .color-scale-3 { fill: #3b82f6; }
+.react-calendar-heatmap .color-scale-4 { fill: #1e3a8a; }
+
+/* Heatmap Colors - Dark Mode */
+.dark .react-calendar-heatmap .color-empty { fill: #334155; }
+.dark .react-calendar-heatmap .color-scale-1 { fill: #1e293b; }
+.dark .react-calendar-heatmap .color-scale-2 { fill: #1d4ed8; }
+.dark .react-calendar-heatmap .color-scale-3 { fill: #2563eb; }
+.dark .react-calendar-heatmap .color-scale-4 { fill: #60a5fa; }
+
+/* Make month names darker and bolder */
+.react-calendar-heatmap text {
+  font-size: 10px;
+  fill: #0944c4; /* Dark Slate for Light Mode */
+  font-weight: 700;
+}
+
+
+/* Optional: Smooth transition for month label colors */
+.react-calendar-heatmap text {
+  transition: fill 0.3s ease;
+}
